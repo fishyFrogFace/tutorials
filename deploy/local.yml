@@ -1,0 +1,7 @@
+deploy_path: /var/projects/tutorials
+host: stackbuilders@localhost
+port: 10022
+repo: git@github.com:stackbuilders/tutorials.git
+revision: origin/tutorials
+build_script:
+  - source config/local.env && stack setup && make rebuild
